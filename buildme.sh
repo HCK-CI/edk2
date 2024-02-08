@@ -1,0 +1,1 @@
+build -a X64 -t GCC5 -b RELEASE -DSECURE_BOOT_ENABLE=TRUE -DTPM_ENABLE=TRUE -p Ovmfpkg/OvmfPkgX64.dsc

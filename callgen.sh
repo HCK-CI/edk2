@@ -1,0 +1,1 @@
+./ovmf-vars-generator --verbose --oem-string "$(< PkKek1.oemstr)" --qemu-binary ../qemu-build/bin/qemu-system-x86_64 --ovmf-template-vars ./Build/OvmfX64/RELEASE_GCC5/FV/OVMF_VARS.fd  --ovmf-binary ./Build/OvmfX64/RELEASE_GCC5/FV/OVMF_CODE.fd 1_SB_VARS.fd \

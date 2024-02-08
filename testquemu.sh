@@ -1,0 +1,1 @@
+../qemu-build/bin/qemu-system-x86_64 --machine q35 --smp 2 --enable-kvm -m 4096 -vga std  -drive if=pflash,format=raw,readonly,file=./Build/OvmfX64/RELEASE_GCC5/FV/OVMF_CODE.fd -drive if=pflash,format=raw,file=./Build/OvmfX64/RELEASE_GCC5/FV/OVMF_VARS.fd -cdrom f.iso -smbios type=11,value="$(< PkKek1.oemstr)"
