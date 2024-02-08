@@ -1,0 +1,2 @@
+../qemu-build/bin/qemu-system-x86_64 --machine q35 --smp 2 --enable-kvm -m 4096 -vga std -chardev socket,id=chrtpm,path=/tmp/mytpm4/swtpm-sock -tpmdev emulator,id=tpm0,chardev=chrtpm -device tpm-crb,tpmdev=tpm0 server2022.qcow2 -drive if=pflash,format=raw,readonly,file=./OVMF_CODE.secboot.fd -drive if=pflash,format=raw,file=./OVMF_VARS.secboot.fd -usbdevice tablet -name "Server 2022 HLK Studio Client"  -device e1000,netdev=net0,mac=DE:AD:BE:EF:01:FA -netdev tap,id=net0
+

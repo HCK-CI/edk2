@@ -7,10 +7,10 @@
 
 all: subdirs
 
-LANGUAGES = C 
+LANGUAGES = C Python
 
 SOURCE_SUBDIRS := $(patsubst %,Source/%,$(sort $(LANGUAGES)))
-SUBDIRS := $(SOURCE_SUBDIRS) 
+SUBDIRS := $(SOURCE_SUBDIRS) Tests
 CLEAN_SUBDIRS := $(patsubst %,%-clean,$(sort $(SUBDIRS)))
 
 .PHONY: subdirs $(SUBDIRS)
