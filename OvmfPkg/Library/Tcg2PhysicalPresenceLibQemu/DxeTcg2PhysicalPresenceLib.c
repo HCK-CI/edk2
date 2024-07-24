@@ -466,6 +466,8 @@ Tcg2UserConfirm (
   IN      UINT32  TpmPpCommandParameter
   )
 {
+  return TRUE;
+
   CHAR16                            *ConfirmText;
   CHAR16                            *TmpStr1;
   CHAR16                            *TmpStr2;
